@@ -135,14 +135,7 @@ int main()
 
                     printf("\n E- El factorial de %ld es: %ld  y El factorial de %ld es: %ld\n\n   ", numero, factorial, otroNumero, otroFactorial);
 
-                    if(!(numero%1==0))
-                    {
-                        printf("**el primer operando fue redondeado para calcular el factorial");
-                    }
-                    if(!(otroNumero%1==0))
-                    {
-                        printf("**el segundo operando fue redondeado para calcular el factorial");
-                    }
+
 
 
 
