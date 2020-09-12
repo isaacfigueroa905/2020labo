@@ -43,7 +43,7 @@ int main()
             case 1:
                 printf("ingresar primer operando: A= ");
                 scanf("%f", &primerNumero );
-                printf("     A=%.2f\n",primerNumero);
+                printf("....A=%.2f\n",primerNumero);
 
 
 
@@ -53,54 +53,46 @@ int main()
             case 2:
                 printf("ingresar segundo operando: B= ");
                 scanf("%f", &segundoNumero );
-                printf("     B=%.2f\n", segundoNumero);
-
-
+                printf("....B=%.2f\n", segundoNumero);
 
 
                 break;
 
             case 3:
 
-
+                banderaDelTres=1;
                 printf("Calculando operaciones!...\n");
 
                 printf("\n -A.. suma de (A+B)");
-
-                printf("\n -B.. resta de (A+B)");
-
-                printf("\n -C.. division(A/B)");
-
-                printf("\n -D.. multiplicacion(A*B)");
-
-                printf("\n -E.. factorial (A!) (B!)\n ");
-
-
                 suma=SumarNumeros(primerNumero,segundoNumero);//suma
 
+
+                printf("\n -B.. resta de (A+B)");
                 resta=RestarNumeros(primerNumero,segundoNumero);//resta
 
 
-                if(segundoNumero!=0)//division evitando o como cociente
+                printf("\n -C.. division(A/B)");
+                if(segundoNumero!=0)//division solo si 0 no esta como cociente
                 {
                    division=DividirNumeros(primerNumero,segundoNumero);
                 }
 
 
+                printf("\n -D.. multiplicacion(A*B)");
                 multiplicacion=MultiplicarNumeros(primerNumero,segundoNumero);//multiplicacion
 
 
-
+                printf("\n -E.. factorial (A!) (B!)\n ");
                 //factorial
-
-
                 numero=(long int)primerNumero;
                 otroNumero=(long int)segundoNumero;
                 factorial=CalcularFactorial(numero);
                 otroFactorial=CalcularFactorial(otroNumero);
 
 
-                banderaDelTres=1;
+                printf("...OK!!!\n");
+
+
 
 
 
@@ -111,7 +103,7 @@ int main()
 
                 if(banderaDelTres==0)
                 {
-                    printf("\n\n\n Ups!!! Para mostrar resultados primero seleccione opcion 3!!!\n");
+                    printf("\nUps!!! Para mostrar resultados primero seleccione opcion 3!!!\n");
 
 
                 }
@@ -133,7 +125,7 @@ int main()
 
                     printf("\n D- El resultado de %.2f * %.2f es: %.2f",primerNumero,segundoNumero,multiplicacion);
 
-                    printf("\n E- El factorial de %ld es: %ld  y El factorial de %ld es: %ld\n\n   ", numero, factorial, otroNumero, otroFactorial);
+                    printf("\n E- El factorial de %ld es: %ld  y El factorial de %ld es: %ld\n ", numero, factorial, otroNumero, otroFactorial);
 
 
 

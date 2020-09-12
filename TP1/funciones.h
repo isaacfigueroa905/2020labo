@@ -23,9 +23,9 @@ float SumarNumeros(float, float);
 
 /** \brief :Calcula la multiplicacion de dos numeros
  *
- * \param :int el primer numero ingresado por el usuario al que se le multiplicara un segundo numero
- * \param :int el segundo numero ingresado por el usuario por el cual se multiplicara al primero
- * \return :int el resultado de multiplicar ambos numeros
+ * \param :float el primer numero ingresado por el usuario al que se le multiplicara un segundo numero
+ * \param :float el segundo numero ingresado por el usuario por el cual se multiplicara al primero
+ * \return :float el resultado de multiplicar ambos numeros
  *
  */
 float MultiplicarNumeros(float,float);
